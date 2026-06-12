@@ -1,54 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>SERVACHI</title>
-
-<meta name="description"
-content="SERVACHI provides premium car antennas and automotive accessories.">
-
-<meta name="keywords"
-content="car antenna, automotive accessories, SERVACHI">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-    <style>
-        .header{
-            margin-top:20px;
-        }
-        
-        ody{
-            margin:0;
-            text-align:center;
-         }
-
-        h1{
-            margin:10px 0 5px 0;
-            text-align:center;
-        }
-
-        h5{
-            margin:0;
-            color:rgb(6, 94, 15);
-        }
-        h2{
-            margin:0;
-            color:rgb(13, 51, 179);
-        }
-        p{
-            margin:10px 0 0 0;
-            color:rgb(12, 133, 24);
-        }
-    </style>
+    <title>SERVACHI</title>
     
+    <meta name="description" content="SERVACHI provides premium car antennas and automotive accessories.">
+    <meta name="keywords" content="car antenna, automotive accessories, SERVACHI">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
+    <!-- HEADER -->
     <div class="header">
-        <img src="S.png" alt="SERVACHI" height="300px" width="300px">
-       
-        <h1>SERVACHI</h1>
+        <img src="LOGO/S.png.png" alt="SERVACHI Logo">
+        <div class="brand-text">
+            <h1>SERVACHI</h1>
+            <h5>A Place For Fashion</h5>
+        </div>
 
-        <h5>A Place For Fashion</h5>
+        <select id="categories">
+            <option value="#" disabled selected>Shop by Category</option>
+            <option value="#">Home</option>
+            <option value="#">Men Clothing</option>
+            <option value="#">Women Clothing</option>
+            <option value="#">Kids Clothing</option>
+            <option value="#">Accessories</option>
+            <option value="#">Shoes</option>
+            <option value="#">Contact</option>
+        </select>
+
         <div class="nav-icons">
             <div class="search-box">
                 <input type="text" placeholder="Search...">
@@ -56,129 +41,103 @@ content="width=device-width, initial-scale=1.0">
             </div>
             <div class="cart-icon">
                 <i class="fas fa-shopping-cart"></i>
-    </div>
+            </div>
         </div>
     </div>
-<select name="categories" id="categories">
-    <option value="home">Home</option>
-    <option value="men clothing">Men</option>
-    <option value="women clothing">Women</option>
-    <option value="kids clothing">Kids</option>
-    <option value="accessories">Accessories</option>
-    <option value="shoes for all">Shoes</option>
-    <option value="contact">Contact</option>
-</select>
 
-<div class="content">
-    <h2>Welcome to SERVACHI</h2>
-    <p>Your one-stop shop for the latest fashion trends. Explore our wide range of clothing, accessories, and shoes
-    </p>
-</div>
-<!-- Features Bar -->
+    <!-- HERO CONTENT -->
+    <section class="content">
+        <h2>Welcome to SERVACHI</h2>
+        <p>Your one-stop shop for the latest fashion trends. Explore our wide range of clothing, accessories, and shoes.</p>
+    </section>
+
+    <!-- FEATURES BAR -->
     <section class="features-bar">
         <div class="feature-item">
             <i class="fas fa-shipping-fast"></i>
-            <div>
-                <h4>Free Shipping</h4>
-                <p>On orders over $100</p>
-            </div>
+            <h4>Free Shipping</h4>
+            <p>On orders over $100</p>
         </div>
         <div class="feature-item">
             <i class="fas fa-undo"></i>
-            <div>
-                <h4>Easy Returns</h4>
-                <p>30-day money back</p>
-            </div>
+            <h4>Easy Returns</h4>
+            <p>30-day money back</p>
         </div>
         <div class="feature-item">
             <i class="fas fa-headset"></i>
-            <div>
-                <h4>24/7 Support</h4>
-                <p>Dedicated support team</p>
-            </div>
+            <h4>24/7 Support</h4>
+            <p>Dedicated support team</p>
         </div>
         <div class="feature-item">
             <i class="fas fa-lock"></i>
-            <div>
-                <h4>Secure Payment</h4>
-                <p>100% secure checkout</p>
-            </div>
+            <h4>Secure Payment</h4>
+            <p>100% secure checkout</p>
         </div>
     </section>
-    <div class="product-card" data-category="clothing">
-                <div class="product-image">
-                    <span class="discount-badge">-30%</span>
-                    <div class="product-actions">
-                        <button class="action-btn" onclick="addToWishlist()">
-                            <i class="fas fa-heart"></i>
-                        </button>
-                        <button class="action-btn" onclick="quickView()">
-                            <i class="fas fa-eye"></i>
-                        </button>
-                        <button class="action-btn" onclick="addToCompare()">
-                            <i class="fas fa-balance-scale"></i>
-                        </button>
-                    </div>
-                    <img src="WMN-GRN-WH.png" height="300px" width="400px" alt="Product">
-                    <button class="add-to-cart-btn" onclick="addToCart(1)">
-                        <i class="fas fa-shopping-bag"></i>
-                        <p class="price"><span class="original-price">₹499</span></p>
-                        <span>BUY NOW</span>
 
-                    </button>
+    <!-- PRODUCTS SHOP -->
+    <div class="product-card-container">
+
+        <!-- PRODUCT 1: Green & White Dress -->
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-badge">-30%</span>
+                <div class="product-actions">
+                    <button class="action-btn"><i class="fas fa-heart"></i></button>
+                    <button class="action-btn"><i class="fas fa-eye"></i></button>
+                    <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
                 </div>
-                <div class="product-details">
-                    <h3>Green & White Dress</h3>
-
-
-                  <div class="product-card" data-category="clothing">
-                <div class="product-image">
-                    <span class="discount-badge">-30%</span>
-                    <div class="product-actions">
-                        <button class="action-btn" onclick="addToWishlist()">
-                            <i class="fas fa-heart"></i>
-                        </button>
-                        <button class="action-btn" onclick="quickView()">
-                            <i class="fas fa-eye"></i>
-                        </button>
-                        <button class="action-btn" onclick="addToCompare()">
-                            <i class="fas fa-balance-scale"></i>
-                        </button>
-                    </div>
-                    <img src="KDS-WH-TP-BTM.png" height="400px" width="300px alt="Product">
-                    <button class="add-to-cart-btn" onclick="addToCart(1)">
-                        <i class="fas fa-shopping-bag"></i>
-                        <p class="price"><span class="original-price">₹299</span></p>
-                        <span>BUY NOW</span>
-
-                    </button>
-                </div>  
-                <div class="product-details">
-                    <h3>White Top & Bottom</h3>
-                </div>  
-
-                <div class="product-card" data-category="clothing">
-                <div class="product-image">
-                    <span class="discount-badge">-30%</span>
-                    <div class="product-actions">
-                        <button class="action-btn" onclick="addToWishlist()">
-                            <i class="fas fa-heart"></i>
-                        </button>
-                        <button class="action-btn" onclick="quickView()">
-                            <i class="fas fa-eye"></i>
-                        </button>
-                        <button class="action-btn" onclick="addToCompare()">
-                            <i class="fas fa-balance-scale"></i>
-                        </button>
-                    </div>
-                    <img src="MN-CL.jpg" height="400px" width="300px" alt="Product">
-                    <button class="add-to-cart-btn" onclick="addToCart(1)">
-                        <i class="fas fa-shopping-bag"></i>
-                        <p class="price"><span class="original-price">₹499</span></p>
-                        <span>BUY NOW</span>
-                    </button>
-                </div>  
-                <div class="product-details">
-                    <h3>White Top & Bottom</h3>
-                </div>  
+                <!-- REMOVED HEIGHT/WIDTH - LET CSS HANDLE IT -->
+                <img src="PRODUCT IMAGE/WMN-GRN-WH.png" alt="Green & White Dress">
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="price"><span class="original-price">₹499</span> BUY NOW</span>
+                </button>
             </div>
+            <div class="product-details">
+                <h3>Green & White Dress</h3>
+            </div>
+        </div>
+
+        <!-- PRODUCT 2: White Top & Bottom -->
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-badge">-30%</span>
+                <div class="product-actions">
+                    <button class="action-btn"><i class="fas fa-heart"></i></button>
+                    <button class="action-btn"><i class="fas fa-eye"></i></button>
+                    <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                </div>
+                <img src="PRODUCT IMAGE/KDS-WH-TP-BTM.png" alt="White Top & Bottom">
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="price"><span class="original-price">₹299</span> BUY NOW</span>
+                </button>
+            </div>
+            <div class="product-details">
+                <h3>White Top & Bottom</h3>
+            </div>
+        </div>
+
+        <!-- PRODUCT 3: Men Clothing -->
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-badge">-30%</span>
+                <div class="product-actions">
+                    <button class="action-btn"><i class="fas fa-heart"></i></button>
+                    <button class="action-btn"><i class="fas fa-eye"></i></button>
+                    <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                </div>
+                <img src="PRODUCT IMAGE/MN-CL.jpg" alt="Men Clothing">
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="price"><span class="original-price">₹499</span> BUY NOW</span>
+                </button>
+            </div>
+            <div class="product-details">
+                <h3>Men's Collection</h3>
+            </div>
+        </div>
+
+</body>
+</html>
